@@ -34,7 +34,7 @@ const App = () => {
         onChange={handleChange}
       />
 
-      <button onClick={generateMultiply}>multiply</button>
+      <button onClick={generatemultiply}>multiply</button>
       <div>
         <ol>
           {number.map((subItems, index) => {

@@ -6,41 +6,35 @@ const App = () => {
 
   const [number, setNumber] = useState([]);
 
-  const handleChange = (e) => {
-    setData(e.target.value);
-    setNumber([]);
-  };
-
-  const generateMultiply = () => {
+  const multiply = () => {
     let array = [];
     for (let i = 1; i <= 10; i++) {
       let result = inputData * i;
       array = [...array, result];
-      console.log(" ==========> inside ", array);
+      console.log("==========> inside", array);
     }
-    console.log(" =========> outside ", array);
+    console.log("=========>outside", array);
     setNumber(array);
   };
 
   console.log(number);
 
   return (
-    //jsx
     <div className="App">
       <input
         type="numbers"
         placeholder="enter any number"
         value={inputData}
-        onChange={handleChange}
+        onChange={}
       />
 
-      <button onClick={generateMultiply}>multiply</button>
+      <button onClick={multiply}>multiply</button>
       <div>
         <ol>
           {number.map((subItems, index) => {
             return (
               <div>
-                {inputData} * {index + 1} = {subItems}
+                {inputData}*{index+1}={subItems}
               </div>
             );
           })}

@@ -11,7 +11,7 @@ const App = () => {
     setNumber([]);
   };
 
-  const generateMultiply = () => {
+  const multiply = () => {
     let array = [];
     for (let i = 1; i <= 10; i++) {
       let result = inputData * i;
@@ -25,7 +25,6 @@ const App = () => {
   console.log(number);
 
   return (
-    //jsx
     <div className="App">
       <input
         type="numbers"
@@ -34,7 +33,7 @@ const App = () => {
         onChange={handleChange}
       />
 
-      <button onClick={generateMultiply}>multiply</button>
+      <button onClick={generatemultiply}>multiply</button>
       <div>
         <ol>
           {number.map((subItems, index) => {

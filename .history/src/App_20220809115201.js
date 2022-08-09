@@ -32,7 +32,7 @@ const App = () => {
         placeholder="enter any number"
         value={inputData}
         onChange={handleChange}
-      />
+      />fit 
 
       <button onClick={generateMultiply}>multiply</button>
       <div>
